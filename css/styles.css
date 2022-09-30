@@ -86,9 +86,10 @@ p{
 .experts h3
 {
     font-size: 50px;
+    font-weight: bold;
     text-align: center;
     margin: 10px 0px;
-    color: blueviolet;
+    color: #fff;
 }
 .contenedor-experts{
     width: 100%;
@@ -119,9 +120,10 @@ p{
 .proyects h3
 {
     font-size: 50px;
+    font-weight: bold;
     text-align: center;
     margin: 30px 0px;
-    color: blueviolet;
+    color: #fff;
 }
 
 .contenedor-videos{
@@ -158,8 +160,9 @@ p{
 }
 .social p{
     text-align: center;
+    font-weight: bold;
     font-size: 50px;
-    color: blueviolet;
+    color: #fff;
     margin-bottom: 50px;
 }
 
