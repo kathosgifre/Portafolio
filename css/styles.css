@@ -237,7 +237,7 @@ span {
     font-size: 4rem;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   a li {
     font-size: 12px;
   }
