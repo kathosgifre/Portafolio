@@ -42,13 +42,14 @@ ul {
   box-shadow: 0 4px 8px 0 #ea09ff, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 ul.nav-menu {
-  margin: 10px 15px;
+  margin-top: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   align-items: center;
 }
-
 a li {
   margin: auto;
   margin-right: 30px;
