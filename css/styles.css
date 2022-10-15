@@ -124,11 +124,11 @@ span {
 }
 /*zoom effect*/
 .zoom {
-  transition: transform 0.2s;
+  transition: transform 0.1s;
 }
 
 .zoom:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 /*contain projects*/
