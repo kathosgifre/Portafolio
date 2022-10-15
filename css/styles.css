@@ -1,4 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
+  width: 100%;
+  height: 100%;
   margin: auto;
   padding: 0;
   background-color: #1c2a44;
@@ -7,14 +13,25 @@ body {
   font-family: "Oswald", sans-serif;
   color: #fff;
 }
+.contain-main {
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+  padding: 100px 0;
+}
 header {
   width: 100%;
-  height: 100px;
+  height: 10vh;
+  margin-right: 10px;
   display: flex;
   background: #1c2a44;
+  background-size: cover;
+  background-repeat: no-repeat;
   align-items: center;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
 }
 ul {
   display: flex;
@@ -25,6 +42,7 @@ ul {
   box-shadow: 0 4px 8px 0 #ea09ff, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 ul.nav-menu {
+  margin: 10px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,14 +66,16 @@ a li:hover {
 }
 .container {
   width: 100%;
-  margin: 0;
-  position: fixed;
   background: #1c2a44;
 }
 .container .menu-main a i {
   margin: 20px 20px;
   font-size: 50px;
   color: blueviolet;
+}
+
+.nav.menu-main {
+  width: 100%;
 }
 
 /*Information*/
@@ -102,6 +122,15 @@ span {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+/*zoom effect*/
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
 /*contain projects*/
 .experts h3 {
   font-size: 5rem;
@@ -130,8 +159,10 @@ span {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-
-.contain-experts:hover img.zoom {
+.contain-experts:hover img {
+  background-color: blueviolet;
+}
+.contain-experts:hover {
   background-color: rgb(92, 89, 89);
 }
 /*contein videos*/
@@ -143,7 +174,7 @@ span {
   color: #fff;
 }
 
-.contain-videos {
+.contain-proyects {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to right, #434343 0%, black 100%);
@@ -152,23 +183,17 @@ span {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.contain-videos video {
+.contain-proyects img {
+  width: 350px;
+  height: 500px;
   object-fit: cover;
-  width: 40%;
-  height: 55%;
   display: block;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  margin: 20px 25px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-/*zoom effect*/
-.zoom {
-  transition: transform 0.2s;
-}
-
-.zoom:hover {
-  transform: scale(1.5);
+.contain-proyects:hover img {
+  background-color: blueviolet;
 }
 /* Social Media*/
 .social {
@@ -209,7 +234,16 @@ span {
   font-size: 20px;
   text-align: center;
 }
-@media (max-width: 700px) {
+.social.social {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+}
+@media screen and (max-width: 700px) {
   a li {
     font-size: 20px;
   }
@@ -237,7 +271,7 @@ span {
     font-size: 4rem;
   }
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   a li {
     font-size: 12px;
   }
