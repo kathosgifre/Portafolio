@@ -71,7 +71,6 @@ span {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 .dat {
   width: 40%;
@@ -121,7 +120,7 @@ span {
 .contain-experts {
   width: 100%;
   height: 40%;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
   margin: 0px 0px;
   display: flex;
   justify-content: space-evenly;
@@ -141,9 +140,6 @@ span {
 .contain-experts:hover img {
   background-color: blueviolet;
 }
-.contain-experts:hover {
-  background-color: rgb(92, 89, 89);
-}
 /*contain proyects*/
 .proyects h3 {
   font-size: 5rem;
@@ -156,7 +152,7 @@ span {
 .contain-proyects {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
   margin: 20px 0px;
   display: flex;
   justify-content: space-evenly;
