@@ -95,7 +95,7 @@ span {
   height: 300px;
   margin: 50% 30%;
   border-radius: 100%;
-  border: rgb(243, 0, 243) double 25px;
+  border: rgb(243, 0, 243) double 10px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -159,16 +159,13 @@ span {
   flex-wrap: wrap;
 }
 .contain-proyects img {
-  width: 350px;
-  height: 500px;
+  width: 400px;
+  height: 550px;
   object-fit: cover;
   display: block;
   margin: 20px 25px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-}
-.contain-proyects:hover img {
-  background-color: blueviolet;
 }
 /* Social Media*/
 
