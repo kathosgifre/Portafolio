@@ -109,7 +109,7 @@ span {
   transform: scale(1.2);
 }
 
-/*contain skills*/
+/*contain skills carousel*/
 .experts h3 {
   font-size: 5rem;
   text-align: center;
@@ -142,7 +142,7 @@ span {
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
   display: flex;
 }
-.image:hover{
+.image:hover {
   background-color: #ee01ff;
 }
 @keyframes rotate360 {
@@ -199,21 +199,84 @@ span {
 }
 
 .contain-proyects {
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
-  margin: 20px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background: #355C7D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-bottom: 5rem;
+  
+}
+.contain-proyects img {
+  object-fit: fill;
+  width: 300px;
+  height: 350px;
+  display: block;
+  margin: 50px 50px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  border-radius: 20%;
+  border-color:#8a1894;
+  border-style: solid;
+  cursor: pointer;
+}
+/* Project Design*/
+.gallery {
+  background: #aa4b6b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+.contenedor-galeria {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.contain-proyects img {
-  width: 400px;
-  height: 550px;
-  object-fit: cover;
+.img-galeria {
+  object-fit:fill;
+  width: 300px;
+  height: 350px;
   display: block;
-  margin: 20px 25px;
+  margin: 50px 50px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  border-radius: 20%;
+  border-color:#8a1894;
+  border-style: solid;
+  cursor: pointer;
+}
+.imagen-light {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(100%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.show {
+  transform: translate(0);
+}
+.agregar-imagen {
+  object-fit: cover;
+  width: 60%;
+  border-radius: 10px;
+  transform: scale(0);
+  transition: transform 0.3s 0.2s;
+}
+
+.showImage {
+  transform: scale(1);
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  width: 40px;
   cursor: pointer;
 }
 /* Social Media*/
@@ -427,3 +490,4 @@ ul li:nth-child(6) a::before {
     }
   }
 }
+
